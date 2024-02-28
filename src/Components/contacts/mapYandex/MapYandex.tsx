@@ -14,8 +14,8 @@ export default function MapYandex({ defaultCenter }: defaultCenterType) {
         <Map
           style={{
             width: "100%",
-            height: window?.innerWidth < 767 ? "300px" : "400px",
           }}
+          className={classes.inner_map}
           defaultState={{ center: defaultCenter, zoom: 15 }}
         >
           <Placemark geometry={defaultCenter} />

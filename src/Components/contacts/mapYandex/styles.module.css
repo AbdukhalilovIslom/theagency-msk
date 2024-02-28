@@ -10,3 +10,12 @@
   -moz-filter: invert(100%);
   -o-filter: invert(100%);
 }
+
+.inner_map {
+  height: 400px;
+}
+@media (max-width: 767px) {
+  .inner_map {
+    height: 300px;
+  }
+}
