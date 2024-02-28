@@ -1,0 +1,58 @@
+.page_loading_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: #131313;
+  animation: back-fade 1s alternate;
+  animation-delay: 2s;
+}
+.page_loader svg {
+  width: 200px;
+  height: auto;
+  stroke-width: 0.5px;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  fill-opacity: 0;
+  animation: logo-draw 1.5s linear forwards, logo-fade 0.5s linear 1s forwards;
+}
+.logo_bar {
+  fill: #3d454c;
+  stroke: #3d454c;
+}
+.logo_tip {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+@keyframes logo-draw {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 0px;
+  }
+}
+@keyframes back-fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes logo-fade {
+  to {
+    fill-opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .page_loader svg {
+    width: 130px;
+  }
+}

@@ -1,0 +1,122 @@
+.footer {
+  border-top: 1px solid #cacaca;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer_top {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.footer_bottom {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  font-size: var(--font14);
+  margin-top: 120px;
+}
+
+.main_wrapper {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 15px;
+}
+.catalog_wrapper {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 60px;
+  grid-row-gap: 15px;
+}
+.contact_wrapper {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 60px;
+  grid-row-gap: 15px;
+}
+.main {
+}
+.catalog {
+}
+.contact {
+}
+.main_h4,
+.catalo_h4,
+.contact_h4 {
+  color: #c0c0c0;
+  text-transform: uppercase;
+  font-size: var(--font14);
+  font-weight: 200;
+}
+
+.catalog_btn,
+.main_btn,
+.contact_btn {
+  font-size: var(--font14);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 114%; /* 15.96px */
+  width: max-content;
+}
+
+.footer_bottom span {
+  font-size: var(--font12);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(152, 152, 152, 1);
+}
+.contacts_image {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .footer_top,
+  .footer_bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .footer_bottom {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts_image {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .contact_btn_dn {
+    display: none;
+  }
+  .main_wrapper {
+    grid-row-gap: 13px;
+    margin-top: 18px;
+  }
+  .catalog {
+    display: none;
+  }
+  .footer_top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .contact_wrapper {
+    margin-top: 18px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer_bottom {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}

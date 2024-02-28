@@ -1,0 +1,19 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project_image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.project_info {
+  font-size: var(--font14);
+}
+@media (max-width: 520px) {
+  .project_image {
+    aspect-ratio: 30/27;
+  }
+}

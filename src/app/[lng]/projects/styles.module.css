@@ -1,0 +1,11 @@
+.projects {
+  padding-bottom: 150px;
+}
+.title {
+  font-size: var(--font45);
+  font-weight: 200;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 40px;
+}

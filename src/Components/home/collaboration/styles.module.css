@@ -1,0 +1,36 @@
+.collaboration {
+  margin-top: 149px;
+}
+
+.collaboration_wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.title {
+  font-size: var(--font12);
+  color: #989898;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-align: left;
+}
+.companies {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(max-content, 1fr));
+  gap: 50px;
+}
+
+@media (max-width: 1199px) {
+  .collaboration {
+    margin-top: 100px;
+  }
+  .collaboration_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .companies {
+    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+  }
+}

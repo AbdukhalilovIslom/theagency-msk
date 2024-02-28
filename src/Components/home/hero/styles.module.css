@@ -1,0 +1,36 @@
+.hero {
+  height: 100vh;
+  background-image: url(../../../assets/images/heroBck.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.hero_wrapper {
+  display: grid;
+  align-items: flex-end;
+  height: 100%;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+.hero_info {
+  width: 100%;
+}
+.hero_title {
+  font-size: var(--font45);
+  font-weight: 200;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 100%;
+  max-width: 50vw;
+}
+.hero_p {
+  margin-top: 15px;
+  font-size: var(--font14);
+  max-width: 321px;
+}
+
+@media (max-width: 1200px) {
+  .hero_title {
+    max-width: 579px;
+  }
+}

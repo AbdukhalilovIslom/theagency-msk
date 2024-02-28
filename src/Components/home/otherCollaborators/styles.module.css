@@ -1,0 +1,125 @@
+.other_collaborators {
+  margin-bottom: 90px;
+  margin-top: 137px;
+}
+.other_collaborators_title {
+  font-size: var(--font12);
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-align: left;
+  margin-bottom: 10px;
+  color: rgba(152, 152, 152, 1);
+  text-transform: uppercase;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+.title {
+  position: relative;
+  z-index: 2;
+  font-size: var(--font45);
+  font-weight: 200;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.info {
+  position: relative;
+  z-index: 2;
+  font-size: var(--font14);
+  max-width: 316px;
+  margin-top: 15px;
+}
+.cards {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+.card {
+  position: relative;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+.info {
+  position: relative;
+  z-index: 2;
+}
+.info_h2 {
+  font-size: var(--font45);
+  font-weight: 200;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.info_p {
+  margin-top: 15px;
+  font-size: var(--font14);
+}
+.btn_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+}
+
+.card_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.card:hover .card_image {
+  transform: scale(1.1);
+}
+
+.shape {
+  position: absolute;
+  width: 90%;
+  height: 120%;
+  left: 10%;
+  top: -8%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .other_collaborators {
+    margin-top: 100px;
+  }
+  .other_collaborators_title {
+    margin-bottom: 0;
+  }
+
+  .cards {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    padding: 20px 10px;
+    height: 250px;
+  }
+  .btn_wrapper {
+    justify-content: center;
+  }
+  .info_p {
+    margin-top: 10px;
+  }
+  .info {
+    margin-top: 0;
+  }
+}

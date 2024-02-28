@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  cursor: pointer;
+  color: #fff;
+}
+.arrow {
+  position: relative;
+}
+.text {
+  font-size: var(--font14);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.btn:hover .arrow {
+  animation: arrowMove 0.3s both;
+}
+
+@keyframes arrowMove {
+  from {
+    left: 0;
+  }
+  to {
+    left: 5px;
+  }
+}

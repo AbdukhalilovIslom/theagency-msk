@@ -1,0 +1,131 @@
+.consultation {
+  margin-top: 120px;
+  margin-bottom: 109px;
+  position: relative;
+  z-index: 2;
+}
+.consultation_title {
+  color: rgba(152, 152, 152, 1);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-align: left;
+  font-size: var(--font12);
+  margin-bottom: 10px;
+}
+.title {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #616161;
+  font-size: var(--font45);
+  font-weight: 200;
+}
+.body {
+  display: flex;
+  margin-top: 20px;
+}
+.body_info {
+  font-size: var(--font14);
+  width: 50%;
+}
+.body_info_p {
+  max-width: 343px;
+}
+.body_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.body_form_input {
+  font-size: var(--font14);
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #616161;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.body_form_input:focus {
+  border-bottom-color: #fff;
+}
+.body_form_textarea:focus {
+  border-bottom-color: #fff;
+}
+
+.body_form_textarea {
+  font-size: var(--font14);
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #616161;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  resize: none;
+  transition: 0.3s;
+}
+
+.body_form :global(.form-control) {
+  font-size: var(--font14);
+  border: none;
+  border-bottom: 1px solid #616161;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0;
+  width: 100%;
+}
+.body_form :global(.form-control):focus {
+  border-bottom-color: #fff;
+}
+.body_form :global(.react-tel-input) {
+  margin: 0 !important;
+  width: 100%;
+}
+.body_form :global(.open),
+.body_form :global(.input_phone_dropdown),
+.body_form :global(.selected-flag),
+.body_form :global(.selected-flag):hover {
+  background: #131313 !important;
+}
+
+.body_form :global(.country):hover,
+.body_form :global(.highlight) {
+  background: #252525 !important;
+}
+.body_form :global(.flag-dropdown) {
+  background: #131313;
+  border: none !important;
+  border-bottom: 1px solid #616161 !important;
+}
+
+.send {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+@media (max-width: 1199px) {
+  .consultation {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .body {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .body_info {
+    width: 100%;
+  }
+  .body_info_p {
+    max-width: 100%;
+  }
+  .body_form {
+    width: 100%;
+  }
+  .send {
+    justify-content: center;
+  }
+}

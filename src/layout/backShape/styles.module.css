@@ -1,0 +1,38 @@
+.wrapper {
+  padding-top: 199px;
+  position: relative;
+  overflow: hidden;
+}
+.back {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+.shape {
+  z-index: 1;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 65%;
+  height: auto;
+  aspect-ratio: 391/229;
+}
+
+@media (max-width: 1199px) {
+  .wrapper {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    padding-top: 80px;
+    margin-bottom: 13px;
+  }
+  .shape {
+    top: 80px;
+    right: -50px;
+    width: 100%;
+  }
+}

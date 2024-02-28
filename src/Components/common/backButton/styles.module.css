@@ -1,0 +1,27 @@
+.btn {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  gap: 15px;
+  width: max-content;
+}
+.arrow {
+  transform: rotate(180deg);
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.btn:hover .arrow {
+  animation: arrowMove 0.3s both;
+}
+
+@keyframes arrowMove {
+  from {
+    left: 0;
+  }
+  to {
+    left: 5px;
+  }
+}
