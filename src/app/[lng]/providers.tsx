@@ -1,6 +1,4 @@
 "use client";
-import { useState, Dispatch, SetStateAction } from "react";
-import SidebarContext from "@/context/sidebar.context";
 import { Onest } from "next/font/google";
 import { PageLoadingAnimation } from "@/Components/common/pageLoader/pageLoader";
 

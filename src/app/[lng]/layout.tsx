@@ -6,7 +6,6 @@ import Navbar from "@/layout/navbar";
 import Footer from "@/layout/footer/footer";
 import Providers from "./providers";
 import { languages } from "../i18n/settings";
-import ThemeRegistry from "../themeRegistry";
 import Head from "next/head";
 import CallButton from "@/Components/common/callButton/CallButton";
 
@@ -54,16 +53,15 @@ export default function RootLayout({
           showSpinner={false}
           shadow="0 0 10px #fff,0 0 5px #fff"
         />
-        <ThemeRegistry options={{ key: "mui" }}>
-          <Providers>
-            <div>
-              <CallButton />
-              <Navbar lng={lng} />
-              {children}
-              <Footer lng={lng} />
-            </div>
-          </Providers>
-        </ThemeRegistry>
+
+        <Providers>
+          <div>
+            <CallButton />
+            <Navbar lng={lng} />
+            {children}
+            <Footer lng={lng} />
+          </div>
+        </Providers>
       </body>
     </html>
   );
