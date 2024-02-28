@@ -14,7 +14,7 @@ export default function MapYandex({ defaultCenter }: defaultCenterType) {
         <Map
           style={{
             width: "100%",
-            height: window.innerWidth < 767 ? "300px" : "400px",
+            height: window?.innerWidth < 767 ? "300px" : "400px",
           }}
           defaultState={{ center: defaultCenter, zoom: 15 }}
         >
