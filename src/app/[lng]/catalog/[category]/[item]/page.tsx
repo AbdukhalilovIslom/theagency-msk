@@ -40,7 +40,7 @@ export default function page({
         <div className={classes.bottom_tab_view}>
           {item == "1" ? (
             <div style={{ maxWidth: "68vw" }}>
-              <h4>Назначение</h4>
+              <h4 style={{ fontWeight: "500" }}>Назначение</h4>
               <br />
               Грузовые стропы на текстильной основе изготавливаются из
               высококачественных полиэфирных лент и используются в качестве
@@ -51,7 +51,7 @@ export default function page({
               машины и присоединения другой петлей непосредственно к грузу.
               <br />
               <br />
-              <h4>Достоинства</h4>
+              <h4 style={{ fontWeight: "500" }}>Достоинства</h4>
               <br />
               <ul style={{ marginLeft: "20px" }}>
                 <li className={classes.li}>
@@ -87,7 +87,7 @@ export default function page({
             </div>
           ) : item == "2" ? (
             <div style={{ maxWidth: "68vw" }}>
-              <h4>Назначение</h4>
+              <h4 style={{ fontWeight: "500" }}>Назначение</h4>
               <br />
               Стропы из стальных канатов (также известные как чалки)
               изготавливаются согласно ГОСТ 25573-82 и предназначены для
@@ -101,7 +101,7 @@ export default function page({
               снабженных петлями или проушинами.
               <br />
               <br />
-              <h4>Достоинства</h4>
+              <h4 style={{ fontWeight: "500" }}>Достоинства</h4>
               <br />
               <ul style={{ marginLeft: "20px" }}>
                 <li className={classes.li}>
@@ -124,8 +124,10 @@ export default function page({
               </ul>
             </div>
           ) : item == "3" ? (
-            <div style={{ maxWidth: "68vw" }}>
-              Примеры условных обозначений:
+            <div style={{ maxWidth: "56vw" }}>
+              <h4 style={{ fontWeight: "500" }}>
+                Примеры условных обозначений:
+              </h4>
               <ul style={{ marginLeft: "20px", paddingTop: "20px" }}>
                 <li className={classes.li}>
                   Канат стальной ГОСТ 2172-80 3,2 Ж А1:
@@ -163,7 +165,7 @@ export default function page({
           {item == "1" ? (
             <div>
               <div style={{ maxWidth: "39vw" }}>
-                Основные исполнения строп
+                <h4 style={{ fontWeight: "500" }}>Основные исполнения строп</h4>
                 <br />
                 <br />
                 Строп текстильный петлевой СТП — представляет собой сшитую
@@ -290,7 +292,7 @@ export default function page({
             </div>
           ) : item == "2" ? (
             <div>
-              <div>Основные исполнения строп</div>
+              <h4 style={{ fontWeight: "500" }}>Основные исполнения строп</h4>
               <div
                 style={{ display: "flex", gap: "40px", alignItems: "center" }}
               >
@@ -301,7 +303,7 @@ export default function page({
                   height={243}
                   style={{ marginTop: "30px" }}
                 />
-                <div style={{ display: "flex", flex: "1" }}>
+                <div style={{ display: "flex", flex: "1", maxWidth: "58vw" }}>
                   Двухветвевые канатные стропы состоят из двух канатных ветвей,
                   верхнего звена для навешивания на крановый крюк и захватного
                   органа для крепления груза. В петли устанавливаются стальные
@@ -451,1519 +453,1523 @@ export default function page({
               </div>
             </div>
           ) : item == "3" ? (
-            <div style={{ width: "100%", overflow: "scroll" }}>
-              <table border="2" cellpadding="0" cellspacing="0" class="table1">
-                <thead>
-                  <tr>
-                    <td rowspan="3">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            Конструкция каната
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td colspan="5">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            Диаметр, мм
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td rowspan="3">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            Расчетная площадь сечения всех проволок каната, мм
-                            <sup>2</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td rowspan="3">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            Расчетная масса одного метра смазанного каната, г,
-                            не более
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td colspan="3">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            Расчетное разрывное усилие каната в целом, Н/кгс, не
-                            менее
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">каната</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td colspan="2">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            проволоки
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td colspan="2">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            из углеродистых сталей
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td rowspan="2">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            из высоколегированных коррозионностойких сталей
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className={classes.td}>
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">условный</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td className={classes.td}>
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            минимальный
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td className={classes.td}>
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            максимальный
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td className={classes.td}>
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            сердечника
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td className={classes.td}>
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">пряди</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td className={classes.td}>
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            повышенного качества
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td className={classes.td}>
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            нормального качества
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td rowspan="5" valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            6 ´ 7(1 + 6) + + 1 ´ 7(1 + 6)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">1,60</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">1,60</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">1,80</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,20</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,18</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">1,29</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">13,2</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            2220 (227)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            2150 (219)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            1605 (164)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            1,80<sup>*</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">1,75</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">1,90</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,22</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,20</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">1,58</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">16,0</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            2740 (280)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            2640 (269)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            1965 (201)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            2,20<sup>*</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,15</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,35</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,26</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,24</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,27</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">23,7</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            3920 (400)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            3780 (386)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            2945 (301)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,40</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,40</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,70</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,29</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,27</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,87</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">29,4</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            4900 (500)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            4780 (488)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            3820 (390)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            2,50<sup>*</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,50</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">2,70</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,30</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,28</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">3,08</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">31,4</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            5190 (530)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            5130 (524)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            4105 (419)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="12" valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            6 ´ 19(1 + 6 + 12) + 1 ´ 19(1 + 6 + 12)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">3,20</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">3,20</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">3,50</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,24</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,22</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,19</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">54,0</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            9075 (926)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            8900 (908)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            6910 (705)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            3,60<sup>*</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">3,50</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">3,95</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,26</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,24</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">6,16</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">64,1</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            10750 (1100)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            9660 (986)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            8200 (835)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">4,00</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">4,00</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">4,40</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,29</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,27</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">7,79</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">81,2</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            13700(1400)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            12450 (1270)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            10350 (1055)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            4,50<sup>*</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">4,45</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">4,90</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,32</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,30</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">9,59</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">97,8</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            16650 (1700)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            15000 (1530)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            12250 (1255)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">4,80</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">4,80</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,20</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,31</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,32</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">10,89</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">113,5</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            18950 (1935)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            18600 (1895)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            13950 (1425)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,00</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,00</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,60</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,36</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,34</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">12,28</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">129,3</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            20050 (2050)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            19250 (1960)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            15950(1625)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,60</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,60</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">6,00</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,40</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,38</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">15,32</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">159,6</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            25450 (2600)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            24900 (2540)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            19900 (2030)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            6,00<sup>*</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">5,95</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">6,60</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,42</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,40</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">16,96</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">175,5</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            27400 (2800)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            26590 (2710)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            20900 (2130)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">6,40</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">6,40</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">6,80</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,46</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,42</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">18,95</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">197,5</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            31350 (3200)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            31200 (3180)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            23350 (2380)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            7,50<sup>*</sup>
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">7,50</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">8,10</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,53</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,50</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">26,58</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">277,0</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            41550 (4240)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            39550 (4040)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            32750 (3340)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">8,00</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">8,00</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">8,60</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,55</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,53</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">29,66</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">309,1</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            46300 (4725)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            44150 (4500)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            36550 (3730)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">9,50</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">9,50</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">10,20</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,65</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">0,63</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">41,84</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">436,0</span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            65400 (6675)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            64100 (6540)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                    <td valign="top">
-                      <div style={{ textAlign: "center", padding: "5px" }}>
-                        <span>
-                          <span data-mega-font-name="montserrat">
-                            51550 (5260)
-                          </span>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <div
+              style={{ width: "100%", overflow: "scroll" }}
+              dangerouslySetInnerHTML={{
+                __html: `
+                <table border="2" cellpadding="0" cellspacing="0" class="table1">
+            <thead>
+              <tr>
+                <td rowspan="3">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        Конструкция каната
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td colspan="5">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        Диаметр, мм
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td rowspan="3">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        Расчетная площадь сечения всех проволок каната, мм
+                        <sup>2</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td rowspan="3">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        Расчетная масса одного метра смазанного каната, г,
+                        не более
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td colspan="3">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        Расчетное разрывное усилие каната в целом, Н/кгс, не
+                        менее
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">каната</span>
+                    </span>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        проволоки
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        из углеродистых сталей
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td rowspan="2">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        из высоколегированных коррозионностойких сталей
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className={classes.td}>
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">условный</span>
+                    </span>
+                  </div>
+                </td>
+                <td className={classes.td}>
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        минимальный
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td className={classes.td}>
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        максимальный
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td className={classes.td}>
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        сердечника
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td className={classes.td}>
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">пряди</span>
+                    </span>
+                  </div>
+                </td>
+                <td className={classes.td}>
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        повышенного качества
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td className={classes.td}>
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        нормального качества
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5" valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        6 ´ 7(1 + 6) + + 1 ´ 7(1 + 6)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">1,60</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">1,60</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">1,80</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,20</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,18</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">1,29</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">13,2</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        2220 (227)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        2150 (219)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        1605 (164)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        1,80<sup>*</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">1,75</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">1,90</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,22</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,20</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">1,58</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">16,0</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        2740 (280)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        2640 (269)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        1965 (201)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        2,20<sup>*</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,15</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,35</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,26</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,24</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,27</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">23,7</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        3920 (400)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        3780 (386)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        2945 (301)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,40</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,40</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,70</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,29</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,27</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,87</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">29,4</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        4900 (500)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        4780 (488)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        3820 (390)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        2,50<sup>*</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,50</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">2,70</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,30</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,28</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">3,08</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">31,4</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        5190 (530)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        5130 (524)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        4105 (419)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="12" valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        6 ´ 19(1 + 6 + 12) + 1 ´ 19(1 + 6 + 12)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">3,20</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">3,20</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">3,50</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,24</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,22</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,19</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">54,0</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        9075 (926)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        8900 (908)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        6910 (705)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        3,60<sup>*</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">3,50</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">3,95</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,26</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,24</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">6,16</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">64,1</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        10750 (1100)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        9660 (986)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        8200 (835)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">4,00</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">4,00</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">4,40</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,29</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,27</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">7,79</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">81,2</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        13700(1400)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        12450 (1270)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        10350 (1055)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        4,50<sup>*</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">4,45</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">4,90</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,32</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,30</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">9,59</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">97,8</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        16650 (1700)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        15000 (1530)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        12250 (1255)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">4,80</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">4,80</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,20</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,31</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,32</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">10,89</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">113,5</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        18950 (1935)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        18600 (1895)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        13950 (1425)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,00</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,00</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,60</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,36</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,34</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">12,28</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">129,3</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        20050 (2050)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        19250 (1960)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        15950(1625)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,60</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,60</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">6,00</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,40</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,38</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">15,32</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">159,6</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        25450 (2600)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        24900 (2540)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        19900 (2030)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        6,00<sup>*</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">5,95</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">6,60</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,42</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,40</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">16,96</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">175,5</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        27400 (2800)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        26590 (2710)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        20900 (2130)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">6,40</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">6,40</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">6,80</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,46</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,42</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">18,95</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">197,5</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        31350 (3200)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        31200 (3180)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        23350 (2380)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        7,50<sup>*</sup>
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">7,50</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">8,10</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,53</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,50</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">26,58</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">277,0</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        41550 (4240)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        39550 (4040)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        32750 (3340)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">8,00</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">8,00</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">8,60</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,55</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,53</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">29,66</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">309,1</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        46300 (4725)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        44150 (4500)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        36550 (3730)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">9,50</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">9,50</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">10,20</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,65</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">0,63</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">41,84</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">436,0</span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        65400 (6675)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        64100 (6540)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+                <td valign="top">
+                  <div style={{ textAlign: "center", padding: "5px" }}>
+                    <span>
+                      <span data-mega-font-name="montserrat">
+                        51550 (5260)
+                      </span>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>`,
+              }}
+            ></div>
           ) : (
             ""
           )}
@@ -1976,7 +1982,9 @@ export default function page({
             {item == "1" ? (
               <div>
                 {" "}
-                Условия работы и меры безопасности
+                <h4 style={{ fontWeight: "500" }}>
+                  Условия работы и меры безопасности
+                </h4>
                 <br />
                 <br />
                 Для производства текстильных строп чаще всего используют ленту
@@ -2072,7 +2080,7 @@ export default function page({
   };
 
   return (
-    <BackShape text={"назад в каталог"} href={"/catalog"}>
+    <BackShape text={"назад в каталог"} href={"back"}>
       <div className={classes.top}>
         {item == "1" ? (
           <Image
@@ -2122,19 +2130,11 @@ export default function page({
             )}
 
             {item == "1" ? (
-              <p className={classes.top_content_p}>
-                Изготавливаются в соответствии с требованиями ТР ТС <br />
-                010/2011,ГОСТ
-                <br />
-                34875-2022, РД 24-СЗК-01-01, ФНП ПБ ОПО.
-                <br />
-                Производство: ООО «САМСОН»,
-                <br />
-                Россия Стропы из текстильной ленты российского производства.
-                <br />
-                Производитель ленты располагается в Орле и входит в Группу
-                компаний.
-                <br />
+              <p className={classes.top_content_p} style={{ maxWidth: "36vw" }}>
+                Изг. по Ts 25709515 - 01 : 2017. Производство ООО "MOS STAL
+                KANAT" Узбекистан Стропы из текстильной ленты российского
+                производства.Производитель ленты располагается в Орле и входит в
+                Группу компаний.
               </p>
             ) : item == "2" ? (
               <p className={classes.top_content_p}>
@@ -2144,7 +2144,7 @@ export default function page({
                 <br />
               </p>
             ) : item == "3" ? (
-              <p className={classes.top_content_p} style={{ maxWidth: "58%" }}>
+              <p className={classes.top_content_p} style={{ maxWidth: "74%" }}>
                 Канат стальной авиационный ГОСТ 2172-80 Стальные канаты ГОСТ
                 2172-80 применяют в авиационной и аэрокосмической отрасли в
                 качестве канатов систем управления самолетов и вертолетов,

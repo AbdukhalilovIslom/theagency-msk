@@ -35,7 +35,7 @@ export default async function Contacts({ params: { lng } }: ContactsProps) {
               <div className={classes.text}>998 (78) 122-30-69</div>
             </div>
             <div
-              className={classes.right_info}
+              className={`${classes.right_info} ${classes.display_none}`}
               style={{ display: "flex", gap: "35px", flexDirection: "row" }}
             >
               <Link href="https://web.telegram.org/" className={classes.text}>
@@ -45,9 +45,20 @@ export default async function Contacts({ params: { lng } }: ContactsProps) {
                 <Image src={ins} alt="telegram" height={25} width={25} />
               </Link>
             </div>
-            <div className={classes.right_info}>
+            <div className={`${classes.right_info} ${classes.div4}`}>
               <div className={classes.label}>Email:</div>
               <div className={classes.text}>info@mskanat.uz</div>
+            </div>
+            <div
+              className={`${classes.right_info} ${classes.display_block}`}
+              style={{ display: "flex", gap: "35px", flexDirection: "row" }}
+            >
+              <Link href="https://web.telegram.org/" className={classes.text}>
+                <Image src={tg} alt="telegram" height={25} width={25} />
+              </Link>
+              <Link href="https://www.instagram.com/" className={classes.text}>
+                <Image src={ins} alt="telegram" height={25} width={25} />
+              </Link>
             </div>
           </div>
         </div>

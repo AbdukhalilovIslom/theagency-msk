@@ -6,7 +6,7 @@ import arrowRight from "../../../assets/icons/heroVector.svg";
 import Link from "next/link";
 
 interface CatalogCardProps {
-  img: StaticImageData;
+  img: string;
   text: string;
   href: string;
 }
@@ -17,11 +17,7 @@ export default async function CatalogCard({
   href,
 }: CatalogCardProps) {
   return (
-    <div
-      key={text}
-      className={classes.card}
-      //
-    >
+    <div key={text} className={classes.card}>
       <Image
         src={img}
         alt="card_image"

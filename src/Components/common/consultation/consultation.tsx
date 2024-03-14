@@ -25,13 +25,11 @@ export default function Consultation({ lng }: { lng: string }) {
 
   return (
     <section className={classes.consultation} id="consultation">
-      <Container className={classes.consultation_title}>
-        {t("оставьте заявку")}
+      <Container>
+        <h4 className={classes.consultation_title}>{t("оставьте заявку")}</h4>
       </Container>
       <Container className={classes.consultation_wrapper}>
-        <div className={classes.title}>
-          {t("Профессиональная консультация")}
-        </div>
+        <h2 className={classes.title}>{t("Профессиональная консультация")}</h2>
         <div className={classes.body}>
           <div className={classes.body_info}>
             <p className={classes.body_info_p}>

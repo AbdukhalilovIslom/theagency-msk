@@ -29,8 +29,10 @@ export default async function OtherCollaborators({ lng }: { lng: string }) {
 
   return (
     <section className={classes.other_collaborators}>
-      <Container className={classes.other_collaborators_title}>
-        {t("кампании msk")}
+      <Container>
+        <h4 className={classes.other_collaborators_title}>
+          {t("кампании msk")}
+        </h4>
       </Container>
       <Container className={classes.wrapper}>
         <div className={classes.title}>

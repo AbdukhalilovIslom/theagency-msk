@@ -1,5 +1,5 @@
 import Hero from "@/Components/home/hero/hero";
-import classes from "./styles.module.css"
+import classes from "./styles.module.css";
 import Catalog from "@/Components/home/catalog/catalog";
 import About from "@/Components/home/about/about";
 import Advantages from "@/Components/home/advantages/advantages";
@@ -23,11 +23,9 @@ export const metadata = {
   keywords: [],
 };
 
-
 export default function Home({ params: { lng }, ...props }: HomeProps) {
-
   return (
-    <main>
+    <main className={classes.home}>
       <Hero lng={lng} />
       <Catalog lng={lng} />
       <About lng={lng} />

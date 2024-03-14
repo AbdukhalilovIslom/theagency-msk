@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import classes from "./styles.module.css";
 import Image from "next/image";
@@ -21,6 +22,7 @@ export default function BackShape({ children, href, text }: backShapeProps) {
         width={458}
         className={classes.shape}
       />
+
       {text && href ? (
         <div className={classes.back}>
           <BackButton text={text} href={href} />

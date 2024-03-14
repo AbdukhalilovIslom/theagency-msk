@@ -12,6 +12,10 @@
   position: relative;
   cursor: pointer;
 }
+.burger_close_btn {
+  cursor: pointer;
+  padding-block: 10px;
+}
 .burger {
   align-items: center;
   display: flex;
@@ -207,7 +211,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
   .social_media {
     display: flex;

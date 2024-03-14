@@ -26,7 +26,7 @@ export default function EnterButton({
     );
   } else {
     return (
-      <div className={classes.btn}>
+      <button className={classes.btn}>
         <Image
           src={arrow}
           alt={"arrow"}
@@ -35,7 +35,7 @@ export default function EnterButton({
           className={classes.arrow}
         />
         <div className={classes.text}>{text}</div>
-      </div>
+      </button>
     );
   }
 }

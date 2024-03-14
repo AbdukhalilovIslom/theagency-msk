@@ -7,7 +7,7 @@ import img3 from "../../../assets/images/projects/3.webp";
 import img4 from "../../../assets/images/projects/4.webp";
 import FadeUp from "@/layout/fadeUp/fadeUp";
 
-const data = [
+export const ProjectData = [
   {
     info: "Траверса для подъема и перемещения конструкций модульных домов",
     image: img1,
@@ -29,10 +29,16 @@ const data = [
 export default function ProjectCards({ lng }: { lng: string }) {
   return (
     <div className={classes.body}>
-      {data.map(({ info, image }, index) => {
+      {ProjectData.map(({ info, image }, index) => {
         return (
           <FadeUp delay={(index + 1) / 10}>
-            <ProjectCard key={index} info={info} image={image} index={index} />
+            <ProjectCard
+              key={index}
+              info={info}
+              image={image}
+              index={index}
+              lng={lng}
+            />
           </FadeUp>
         );
       })}

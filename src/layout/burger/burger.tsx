@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/icons/logoWhite.svg";
 import cross from "../../assets/icons/cross.svg";
 import shape from "../../assets/icons/back-shape.png";
@@ -33,13 +33,21 @@ export default function Burger({ lng }: BurgerProps) {
     setOpen(!isOpen);
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.getElementsByTagName("html")[0].style.overflow = "hidden";
+    } else {
+      document.getElementsByTagName("html")[0].style.overflow = "scroll";
+    }
+  }, [isOpen]);
+
   return (
     <div>
       <div onClick={handleIsOpen} className={classes.burger_icon}>
-        <div className={classes.burger}>
+        <button className={classes.burger}>
           <span className={classes.hamburger__top}></span>
           <span className={classes.hamburger__bottom}></span>
-        </div>
+        </button>
       </div>
       <Drawer
         anchor={"top"}
@@ -60,13 +68,15 @@ export default function Burger({ lng }: BurgerProps) {
                 onClick={handleIsOpen}
                 className={classes.close_icon}
               /> */}
-              <div
-                className={`${classes.burger} ${classes._opened}`}
+              <button
+                className={classes.burger_close_btn}
                 onClick={handleIsOpen}
               >
-                <span className={classes.hamburger__top}></span>
-                <span className={classes.hamburger__bottom}></span>
-              </div>
+                <div className={`${classes.burger} ${classes._opened}`}>
+                  <span className={classes.hamburger__top}></span>
+                  <span className={classes.hamburger__bottom}></span>
+                </div>
+              </button>
               <div className={classes.display_none}>
                 <LangSwitcher lng={lng} />
               </div>

@@ -25,24 +25,26 @@ export default async function About({ lng }: { lng: string }) {
       text: t("изготовленных систем"),
     },
     {
-      count: "10",
-      text: t("лет на международном рынке"),
+      count: "<12",
+      text: t("уникальных видов изделий"),
     },
     {
-      count: "<100",
-      text: t("установленных систем"),
+      count: "<150",
+      text: t("позиций \n товаров"),
     },
   ];
 
   return (
     <section className={classes.about}>
       <Container className={classes.title}>
-        <span className={classes.title_span}>{t("о нас")}</span>
-        <span className={classes.title_h2}>
-          {t(
-            "MSK - одно из крупнейших предприятий по разработке и изготовлению различного вида грузоподъемных механизмов и съемных грузозахватных приспособлений."
-          )}
-        </span>
+        <h2>
+          <span className={classes.title_span}>{t("о нас")}</span>
+          <span className={classes.title_h2}>
+            {t(
+              "MSK - одно из крупнейших предприятий по разработке и изготовлению различного вида грузоподъемных механизмов и съемных грузозахватных приспособлений"
+            )}
+          </span>
+        </h2>
       </Container>
       <Container className={classes.about_us_title}>
         <EnterButton href={"/team"} text={t("О КОМПАНИИ")} />
@@ -54,8 +56,8 @@ export default async function About({ lng }: { lng: string }) {
               <div
                 className={`${classes.count} ${classes["div" + (index + 1)]}`}
               >
-                <div className={classes.count_number}>{count}</div>
-                <div className={classes.count_text}>{text}</div>
+                <h4 className={classes.count_number}>{count}</h4>
+                <p className={classes.count_text}>{text}</p>
               </div>
             </FadeUp>
           );

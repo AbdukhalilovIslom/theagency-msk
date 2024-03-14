@@ -38,7 +38,7 @@ export default async function Advantages({ lng }: { lng: string }) {
   return (
     <section className={classes.advantages}>
       <Container className={classes.wrapper}>
-        <h2 className={classes.title}>{t("ПРЕИМУЩЕСТВА")}</h2>
+        <h4 className={classes.title}>{t("ПРЕИМУЩЕСТВА")}</h4>
         <div className={classes.content_wrapper}>
           <div className={classes.content}>
             {data.map(({ title, info }, index) => {

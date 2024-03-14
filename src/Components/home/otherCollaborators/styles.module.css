@@ -116,12 +116,10 @@
   .other_collaborators {
     margin-top: 100px;
   }
-  .other_collaborators_title {
-    margin-bottom: 0;
-  }
 
   .card {
     padding: 20px 8px;
+    aspect-ratio: 30/25;
   }
   .btn_wrapper {
     justify-content: center;

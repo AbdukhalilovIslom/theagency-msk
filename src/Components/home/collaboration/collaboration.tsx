@@ -9,7 +9,7 @@ export default async function Collaboration({ lng }: { lng: string }) {
   return (
     <section className={classes.collaboration}>
       <Container className={classes.collaboration_wrapper}>
-        <div className={classes.title}>{t("НАМ ДОВЕРЯЮТ")}</div>
+        <h4 className={classes.title}>{t("НАМ ДОВЕРЯЮТ")}</h4>
         <CollaborationCards />
       </Container>
     </section>

@@ -24,11 +24,13 @@
 .contacts_right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
   position: relative;
   z-index: 2;
   margin-top: 40px;
 }
+
 .right_info {
   display: flex;
   flex-direction: column;
@@ -37,8 +39,8 @@
 }
 
 .text {
-  font-size: var(--font20);
-  font-weight: 200;
+  font-size: var(--font24);
+  font-weight: 100;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -50,6 +52,9 @@
   color: #999999;
   text-transform: uppercase;
 }
+.display_block {
+  display: none !important;
+}
 
 @media (max-width: 767px) {
   .contacts_wrapper {
@@ -58,9 +63,15 @@
     padding-bottom: 0;
   }
   .contacts_right {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .display_none {
+    display: none !important;
   }
   .left_title {
     margin-top: 0;

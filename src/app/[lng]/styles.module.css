@@ -26,3 +26,9 @@
     opacity: 0;
   }
 }
+
+.home {
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+}
