@@ -52,10 +52,11 @@ export default async function Contacts({ params: { lng } }: ContactsProps) {
           </div>
         </div>
       </BackShape>
-      <Consultation lng={lng} />
+
       <div className={classes.map}>
         <MapYandex defaultCenter={[41.274748, 69.241935]} />
       </div>
+      <Consultation lng={lng} />
     </div>
   );
 }

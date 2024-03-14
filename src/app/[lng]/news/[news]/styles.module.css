@@ -1,5 +1,4 @@
 .news_product {
-  padding-top: 199px;
 }
 .news_product_wrapper {
   position: relative;
@@ -12,13 +11,13 @@
   gap: 15px;
   text-transform: uppercase;
   font-size: var(--font14);
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.03em;
   text-align: left;
 }
 .title {
   font-size: var(--font45);
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: -0.11391162127256393px;
   text-align: left;
   position: relative;
@@ -34,11 +33,15 @@
   font-weight: 300;
   letter-spacing: 0em;
   text-align: left;
-  font-size: 14px;
+  font-size: var(--font14);
 }
 .product_image {
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 50/25;
+  margin-bottom: 30px;
 }
 .body_left {
 }
@@ -50,7 +53,7 @@
   font-weight: 300;
   letter-spacing: 0em;
   text-align: left;
-  font-size: 14px;
+  font-size: var(--font14);
   max-width: 855px;
   position: relative;
   z-index: 2;
@@ -65,5 +68,7 @@
 
 .arrow {
   transform: rotate(180deg);
+  height: 100%;
+  aspect-ratio: 45/81;
   width: auto;
 }

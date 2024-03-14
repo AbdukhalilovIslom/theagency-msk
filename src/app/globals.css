@@ -20,7 +20,7 @@
   --font46: 3.2vw;
   --font50: 3.47vw;
   --font60: 4vw;
-  --font70: clamp(4.0625rem, 3.9489rem + 0.5682vw, 4.375rem);
+  --font70: 4.86vw;
   --font80: 5.5vw;
   --font90: 6.25vw;
   --font104: 7.2vw;
@@ -45,6 +45,7 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 main {
@@ -87,12 +88,12 @@ button {
     --font33: 33px;
     --font35: clamp(1.125rem, 0.7386rem + 1.9318vw, 2.1875rem);
     --font38: 38px;
-    --font40: 40px;
+    --font40: clamp(1.875rem, 1.6477rem + 1.1364vw, 2.5rem);
     --font45: clamp(1.75rem, 1.3636rem + 1.9318vw, 2.8125rem);
     --font46: 46px;
     --font50: 50px;
     --font60: 60px;
-    --font70: 70px;
+    --font70: clamp(4.0625rem, 3.9489rem + 0.5682vw, 4.375rem);
     --font80: 80px;
     --font90: 90px;
     --font104: 104px;

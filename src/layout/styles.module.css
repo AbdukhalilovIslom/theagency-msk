@@ -6,8 +6,9 @@
   z-index: 9;
 }
 .logo {
-  width: auto;
+  width: 12.5vw;
   height: auto;
+  aspect-ratio: 150/37;
 }
 .lang {
   display: flex;
@@ -115,7 +116,12 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
+  .logo {
+    width: 150px;
+  }
+}
+@media (max-width: 767px) {
   .contacts,
   .lang {
     display: none;

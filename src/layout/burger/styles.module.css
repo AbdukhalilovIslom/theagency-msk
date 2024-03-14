@@ -6,17 +6,80 @@
 .burger {
   height: 8px;
   width: 44px;
-  border-top: 1.2px solid #fff;
-  border-bottom: 1.2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+.burger {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.hamburger__bottom,
+.hamburger__top {
+  height: 1px;
+  position: relative;
+  width: 100%;
+}
+.hamburger__bottom:after,
+.hamburger__bottom:before,
+.hamburger__top:after,
+.hamburger__top:before {
+  background-color: rgb(255, 255, 255);
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.hamburger__bottom:before,
+.hamburger__top:before {
+  transform-origin: left;
+}
+.hamburger__bottom:after,
+.hamburger__top:after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.burger:hover .hamburger__top:after {
+  transform: scaleX(1);
+  transition: transform 0.35s cubic-bezier(0.215, 0.61, 0.355, 1) 0.35s;
+}
+.burger:hover .hamburger__top:before {
+  transform: scaleX(0);
+  transition: transform 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.burger:hover .hamburger__bottom:after {
+  transform: scaleX(1);
+  transition: transform 0.35s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.burger:hover .hamburger__bottom:before {
+  transform: scaleX(0);
+  transition: transform 0.35s cubic-bezier(0.215, 0.61, 0.355, 1) 0.15s;
+}
+
+.burger._opened .hamburger__top {
+  width: 33px;
+  transform: translateY(1px) rotate(45deg);
+}
+.burger._opened .hamburger__bottom {
+  width: 33px;
+  transform: translateY(-6px) rotate(-45deg);
+}
 .burger_wrapper {
   padding-inline: var(--padding-inline);
   padding-block: 30px;
   background-color: #131313;
   color: #fff;
-  width: 100vw;
-  height: 100vmax;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,6 +117,7 @@
   gap: 15px;
   position: relative;
   z-index: 2;
+  left: 50px;
 }
 .body_link {
   font-size: var(--font45);
@@ -127,6 +191,11 @@
 .social_media {
   display: none;
 }
+.logo {
+  width: 12.5vw;
+  height: auto;
+  aspect-ratio: 150/37;
+}
 
 @media (max-width: 767px) {
   .logo {
@@ -167,5 +236,8 @@
   }
   .back_shape {
     width: 135%;
+  }
+  .navs {
+    left: 0px;
   }
 }

@@ -9,6 +9,7 @@ import img6 from "../../assets/images/catalog/6.webp";
 import img7 from "../../assets/images/catalog/7.webp";
 import img8 from "../../assets/images/catalog/8.webp";
 import CatalogCard from "../common/catalogCard/catalogCard";
+import FadeUp from "@/layout/fadeUp/fadeUp";
 
 const cards = [
   {
@@ -96,8 +97,12 @@ const cards = [
 export default function CatalogCards() {
   return (
     <div className={classes.body}>
-      {cards.map(({ img, text }) => {
-        return <CatalogCard img={img} text={text} href={"/catalog/somthing"} />;
+      {cards.map(({ img, text }, index) => {
+        return (
+          <FadeUp delay={(index + 1) / 10} key={text}>
+            <CatalogCard img={img} text={text} href={"/catalog/somthing"} />
+          </FadeUp>
+        );
       })}
     </div>
   );

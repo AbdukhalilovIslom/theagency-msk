@@ -26,7 +26,7 @@ function Footer({ lng, ...props }: footerProps) {
     <Container className={classes.footer}>
       <div className={classes.footer_top}>
         <div className={classes.main}>
-          <h4 className={classes.main_h4}>{t("Меню")}</h4>
+          <h4 className={classes.main_heading}>{t("Меню")}</h4>
           <div className={classes.main_wrapper}>
             {navigations.map(({ text, href }) => {
               return (
@@ -38,7 +38,7 @@ function Footer({ lng, ...props }: footerProps) {
           </div>
         </div>
         <div className={classes.catalog}>
-          <h4 className={classes.catalo_h4}>{t("Каталог")}</h4>
+          <h4 className={classes.catalog_heading}>{t("Каталог")}</h4>
           <div className={classes.catalog_wrapper}>
             <Link
               href={"/" + lng + "/catalog/something"}
@@ -50,7 +50,7 @@ function Footer({ lng, ...props }: footerProps) {
               href={"/" + lng + "/catalog/something"}
               className={classes.catalog_btn}
             >
-              {t("Стальная проволока ")}
+              {t("Стальная проволока")}
             </Link>
             <Link
               href={"/" + lng + "/catalog/something"}
@@ -85,32 +85,36 @@ function Footer({ lng, ...props }: footerProps) {
           </div>
         </div>
         <div className={classes.contact}>
-          <h4 className={classes.contact_h4}>{t("Контакты")}</h4>
+          <h4 className={classes.contact_heading}>{t("Контакты")}</h4>
           <div className={classes.contact_wrapper}>
-            <Link href={"/" + lng + "/"} className={classes.contact_btn}>
-              info@mskanat.uz
-            </Link>
-            <Link
-              href={"/" + lng + "/"}
-              className={`${classes.contact_btn} ${classes.contact_btn_dn}`}
-            >
-              Instagram
-            </Link>
-            <Link href={"/" + lng + "/"} className={classes.contact_btn}>
-              998 78 122-30-69
-            </Link>
-            <Link
-              href={"/" + lng + "/"}
-              className={`${classes.contact_btn} ${classes.contact_btn_dn}`}
-            >
-              Telegram
-            </Link>
-            <Link
-              href={"/" + lng + "/"}
-              className={`${classes.contact_btn} ${classes.contact_btn_dn}`}
-            >
-              Whatsapp
-            </Link>
+            <div className={classes.contact_btns}>
+              <Link href={"/" + lng + "/"} className={classes.contact_btn}>
+                info@mskanat.uz
+              </Link>
+              <Link href={"/" + lng + "/"} className={classes.contact_btn}>
+                998 78 122-30-69
+              </Link>
+            </div>
+            <div className={classes.contact_btns}>
+              <Link
+                href={"/" + lng + "/"}
+                className={`${classes.contact_btn} ${classes.contact_btn_dn}`}
+              >
+                Instagram
+              </Link>
+              <Link
+                href={"/" + lng + "/"}
+                className={`${classes.contact_btn} ${classes.contact_btn_dn}`}
+              >
+                Telegram
+              </Link>
+              <Link
+                href={"/" + lng + "/"}
+                className={`${classes.contact_btn} ${classes.contact_btn_dn}`}
+              >
+                Whatsapp
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -119,9 +123,11 @@ function Footer({ lng, ...props }: footerProps) {
           <Image src={insta} alt="tg" height={25} width={25} />
           <Image src={tg} alt="tg" height={25} width={25} />
         </div>
-        <LangSwitcher lng={lng} />
-        <span>© 2024 MSK Group</span>
-        <span>{t("Сделано The Agency")}</span>
+        <div className={classes.lang_switch}>
+          <LangSwitcher lng={lng} />
+        </div>
+        <span>MSK. GROUP OF COMPANIES</span>
+        <Link href="https://theagency.uz/">{t("Сделано The Agency")}</Link>
       </div>
     </Container>
   );

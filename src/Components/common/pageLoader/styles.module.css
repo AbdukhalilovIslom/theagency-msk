@@ -12,14 +12,37 @@
   animation: back-fade 1s alternate;
   animation-delay: 2s;
 }
-.page_loader svg {
-  width: 200px;
-  height: auto;
+.page_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 60px;
+}
+.favicon {
+  height: 100%;
+  aspect-ratio: 54/31;
   stroke-width: 0.5px;
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
   fill-opacity: 0;
-  animation: logo-draw 1.5s linear forwards, logo-fade 0.5s linear 1s forwards;
+  animation: logo-draw 1.5s linear forwards, logo-fade 0.3s linear 1s forwards;
+}
+
+.letter_wrapper {
+  position: relative;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 15/7;
+  overflow: hidden;
+}
+
+.favicon_letters {
+  position: absolute;
+  left: -100%;
+  height: 100%;
+  width: auto;
+  animation: letters-show 0.5s linear 1s forwards;
 }
 .logo_bar {
   fill: #3d454c;
@@ -29,13 +52,13 @@
   fill: #ffffff;
   stroke: #ffffff;
 }
+
 @keyframes logo-draw {
   from {
     stroke-dashoffset: 300;
   }
   to {
     stroke-dashoffset: 0;
-    stroke-width: 0px;
   }
 }
 @keyframes back-fade {
@@ -51,8 +74,21 @@
     fill-opacity: 1;
   }
 }
+@keyframes letters-show {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
 @media (max-width: 767px) {
-  .page_loader svg {
-    width: 130px;
+  .page_loader {
+    position: relative;
+    top: -50px;
+  }
+  .page_loader {
+    height: 40px;
   }
 }

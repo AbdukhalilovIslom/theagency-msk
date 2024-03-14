@@ -1,10 +1,11 @@
 import React from "react";
 import classes from "./styles.module.css";
 import ProjectCard from "@/Components/common/projectCard/projectCard";
-import img1 from "../../../assets/images/projects/1.jpg";
-import img2 from "../../../assets/images/projects/2.jpg";
-import img3 from "../../../assets/images/projects/3.jpg";
-import img4 from "../../../assets/images/projects/4.jpg";
+import img1 from "../../../assets/images/projects/1.webp";
+import img2 from "../../../assets/images/projects/2.webp";
+import img3 from "../../../assets/images/projects/3.webp";
+import img4 from "../../../assets/images/projects/4.webp";
+import FadeUp from "@/layout/fadeUp/fadeUp";
 
 const data = [
   {
@@ -29,7 +30,11 @@ export default function ProjectCards({ lng }: { lng: string }) {
   return (
     <div className={classes.body}>
       {data.map(({ info, image }, index) => {
-        return <ProjectCard key={index} info={info} image={image} />;
+        return (
+          <FadeUp delay={(index + 1) / 10}>
+            <ProjectCard key={index} info={info} image={image} index={index} />
+          </FadeUp>
+        );
       })}
     </div>
   );

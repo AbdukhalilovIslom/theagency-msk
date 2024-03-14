@@ -11,6 +11,7 @@ import img8 from "../../../assets/images/catalog/8.webp";
 import CatalogCard from "@/Components/common/catalogCard/catalogCard";
 import EnterButton from "@/Components/common/enterButton/EnterButton";
 import { useTranslation } from "@/app/i18n";
+import FadeUp from "@/layout/fadeUp/fadeUp";
 
 const cards = [
   {
@@ -60,12 +61,17 @@ export default async function CatalogCards({ lng }: { lng: string }) {
 
   return (
     <div className={classes.body}>
-      {cards.map(({ img, text }) => {
+      {cards.map(({ img, text }, index) => {
         return (
-          <CatalogCard img={img} text={text} href={"/catalog/something"} />
+          <FadeUp delay={(1 + index) / 10}>
+            <CatalogCard img={img} text={text} href={"/catalog/something"} />
+          </FadeUp>
         );
       })}
-      <div className={classes.see_all}>
+      <div
+        className={classes.see_all}
+        //
+      >
         <EnterButton text={t("все разделы")} href={"/catalog"} />
       </div>
     </div>

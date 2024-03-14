@@ -14,11 +14,19 @@
   text-align: left;
 }
 .companies {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(max-content, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
+.companies_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.company {
+  height: 4vw;
+  width: auto;
+}
 @media (max-width: 1199px) {
   .collaboration {
     margin-top: 100px;
@@ -28,9 +36,21 @@
     flex-direction: column;
     gap: 20px;
   }
+  .companies {
+    justify-content: center;
+  }
+  .company {
+    height: 50px;
+  }
 }
 @media (max-width: 767px) {
   .companies {
-    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .companies_inner {
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
   }
 }

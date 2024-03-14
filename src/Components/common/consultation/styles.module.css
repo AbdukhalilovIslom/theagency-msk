@@ -17,7 +17,7 @@
   padding-bottom: 22px;
   border-bottom: 1px solid #616161;
   font-size: var(--font45);
-  font-weight: 200;
+  font-weight: 100;
 }
 .body {
   display: flex;
@@ -45,6 +45,7 @@
   outline: none;
   color: #fff;
   transition: 0.3s;
+  border-radius: 0px;
 }
 .body_form_input:focus {
   border-bottom-color: #fff;
@@ -63,6 +64,7 @@
   color: #fff;
   resize: none;
   transition: 0.3s;
+  border-radius: 0px;
 }
 
 .body_form :global(.form-control) {
@@ -73,7 +75,7 @@
   outline: none;
   color: #fff;
   transition: 0.3s;
-  border-radius: 0;
+  border-radius: 0px;
   width: 100%;
 }
 .body_form :global(.form-control):focus {
@@ -85,7 +87,6 @@
 }
 .body_form :global(.open),
 .body_form :global(.input_phone_dropdown),
-.body_form :global(.selected-flag),
 .body_form :global(.selected-flag):hover {
   background: #131313 !important;
 }
@@ -95,9 +96,8 @@
   background: #252525 !important;
 }
 .body_form :global(.flag-dropdown) {
-  background: #131313;
+  background: none;
   border: none !important;
-  border-bottom: 1px solid #616161 !important;
 }
 
 .send {
@@ -124,8 +124,5 @@
   }
   .body_form {
     width: 100%;
-  }
-  .send {
-    justify-content: center;
   }
 }

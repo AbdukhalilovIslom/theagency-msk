@@ -1,22 +1,22 @@
 .make_application_wrapper {
   max-width: max-content;
-  overflow-x: hidden;
+  width: 100%;
 }
-.make_application :global(.MuiDialog-container) {
+.dialog_wrapper :global(.MuiDialog-container) {
   position: relative;
   z-index: 10;
   justify-content: flex-end;
 }
-.make_application :global(.MuiBackdrop-root) {
+.dialog_wrapper :global(.MuiBackdrop-root) {
   background-color: transparent;
 }
 
-.make_application :global(.MuiPaper-root) {
+.dialog_wrapper :global(.MuiPaper-root) {
   margin: 0;
   height: 100vh;
   max-height: 100vh;
   width: 100%;
-  max-width: 480px;
+  max-width: 40vw;
   background-color: #131313;
 }
 .dialog {
@@ -40,10 +40,11 @@
   padding-inline: var(--padding-inline);
   font-size: var(--font45);
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 100%; /* 45px */
   letter-spacing: -0.114px;
   margin-top: 40px;
+  text-transform: none;
 }
 .dialog_text {
   padding-inline: var(--padding-inline);
@@ -52,6 +53,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 130%; /* 18.2px */
+  text-transform: none;
 }
 
 .body_form {
@@ -72,6 +74,7 @@
   outline: none;
   color: #fff;
   transition: 0.3s;
+  border-radius: 0px;
 }
 .body_form_input:focus {
   border-bottom-color: #fff;
@@ -90,10 +93,11 @@
   color: #fff;
   resize: none;
   transition: 0.3s;
+  border-radius: 0px;
 }
 
-.make_application :global(.form-control) {
-  font-size: var(--font14);
+.dialog_wrapper :global(.form-control) {
+  font-size: var(--font14) !important;
   border: none !important;
   border-bottom: 1px solid #616161 !important;
   background: transparent !important;
@@ -103,32 +107,32 @@
   border-radius: 0 !important;
   width: 100% !important;
 }
-.make_application :global(.form-control):focus {
+.dialog_wrapper :global(.form-control):focus {
   border-bottom-color: #fff !important;
 }
-.make_application :global(.react-tel-input) {
+.dialog_wrapper :global(.react-tel-input) {
   margin: 0 !important;
   width: 100%;
 }
-.make_application :global(.selected-flag) {
+.dialog_wrapper :global(.selected-flag) {
   border: none !important;
   border-radius: 0 !important;
+  bottom: 1px;
+  background: none;
 }
-.make_application :global(.open),
-.make_application :global(.input_phone_dropdown),
-.make_application :global(.selected-flag),
-.make_application :global(.selected-flag):hover {
+.dialog_wrapper :global(.open),
+.dialog_wrapper :global(.input_phone_dropdown),
+.dialog_wrapper :global(.selected-flag):hover {
   background: #131313 !important;
 }
 
-.make_application :global(.country):hover,
-.make_application :global(.highlight) {
+.dialog_wrapper :global(.country):hover,
+.dialog_wrapper :global(.highlight) {
   background: #252525 !important;
 }
-.make_application :global(.flag-dropdown) {
-  background: #131313;
+.dialog_wrapper :global(.flag-dropdown) {
   border: none !important;
-  border-bottom: 1px solid #616161 !important;
+  background: none !important;
 }
 
 .send {
@@ -142,6 +146,11 @@
   bottom: 30px;
   right: 50px;
   left: 50px;
+}
+@media (max-width: 1199px) {
+  .dialog_wrapper :global(.MuiPaper-root) {
+    max-width: 480px;
+  }
 }
 @media (max-width: 425px) {
   .dialog {

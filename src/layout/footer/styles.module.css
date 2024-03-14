@@ -1,12 +1,12 @@
 .footer {
-  border-top: 1px solid #cacaca;
-  padding-top: 60px;
   padding-bottom: 30px;
   position: relative;
   z-index: 2;
 }
 
 .footer_top {
+  padding-top: 60px;
+  border-top: 1px solid #616161;
   display: grid;
   grid-template-columns: 25% 50% 25%;
 }
@@ -45,9 +45,16 @@
 }
 .contact {
 }
-.main_h4,
-.catalo_h4,
-.contact_h4 {
+
+.contact_btns {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.main_heading,
+.catalog_heading,
+.contact_heading {
   color: #c0c0c0;
   text-transform: uppercase;
   font-size: var(--font14);
@@ -64,7 +71,8 @@
   width: max-content;
 }
 
-.footer_bottom span {
+.footer_bottom span,
+.footer_bottom a {
   font-size: var(--font12);
   font-weight: 300;
   letter-spacing: 0.02em;
@@ -87,6 +95,10 @@
 }
 
 @media (max-width: 767px) {
+  .lang_switch {
+    margin-bottom: 40px;
+  }
+
   .contacts_image {
     display: flex;
     gap: 35px;

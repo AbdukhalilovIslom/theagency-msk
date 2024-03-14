@@ -3,7 +3,7 @@ import logo from "../../assets/icons/logoWhite.svg";
 import cross from "../../assets/icons/cross.svg";
 import shape from "../../assets/icons/back-shape.png";
 import tg from "../../assets/icons/instagram.svg";
-import insta from "../../assets/icons/callButton.svg";
+import insta from "../../assets/icons/burgerPhoneIcon.svg";
 import phone from "../../assets/icons/telegram.svg";
 import classes from "./styles.module.css";
 import { Drawer } from "@mui/material";
@@ -14,7 +14,6 @@ import { onest } from "@/app/[lng]/providers";
 import MakeApplication from "@/Components/common/makeApplication/makeApplication";
 import { useTranslation } from "@/app/i18n/client";
 import CallButton from "@/Components/common/callButton/CallButton";
-import EnterButton from "@/Components/common/enterButton/EnterButton";
 
 interface BurgerProps {
   lng: string;
@@ -37,7 +36,10 @@ export default function Burger({ lng }: BurgerProps) {
   return (
     <div>
       <div onClick={handleIsOpen} className={classes.burger_icon}>
-        <div className={classes.burger}></div>
+        <div className={classes.burger}>
+          <span className={classes.hamburger__top}></span>
+          <span className={classes.hamburger__bottom}></span>
+        </div>
       </div>
       <Drawer
         anchor={"top"}
@@ -50,14 +52,21 @@ export default function Burger({ lng }: BurgerProps) {
         <div className={`${classes.burger_wrapper} ${onest.className}`}>
           <div className={classes.header}>
             <div className={classes.left}>
-              <Image
+              {/* <Image
                 src={cross}
                 alt="cross"
                 width={31}
                 height={31}
                 onClick={handleIsOpen}
                 className={classes.close_icon}
-              />
+              /> */}
+              <div
+                className={`${classes.burger} ${classes._opened}`}
+                onClick={handleIsOpen}
+              >
+                <span className={classes.hamburger__top}></span>
+                <span className={classes.hamburger__bottom}></span>
+              </div>
               <div className={classes.display_none}>
                 <LangSwitcher lng={lng} />
               </div>
@@ -90,16 +99,17 @@ export default function Burger({ lng }: BurgerProps) {
                 );
               })}
             </div>
-            <div className={classes.display_block}>
-              <MakeApplication lng={lng} />
-            </div>
+
             <Image src={shape} alt="shape" className={classes.back_shape} />
           </div>
           <div className={classes.footer}>
             <div className={classes.display_block}>
+              <MakeApplication lng={lng} />
+            </div>
+            <div className={classes.display_block}>
               <LangSwitcher lng={lng} />
             </div>
-            <EnterButton text={t("другие проекты MSK")} href={"/" + lng} />
+
             <div className={classes.social_media}>
               <Image src={tg} alt="social_media" height={25} width={25} />
               <Image src={insta} alt="social_media" height={25} width={25} />

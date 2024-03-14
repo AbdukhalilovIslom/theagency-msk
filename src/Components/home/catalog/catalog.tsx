@@ -4,6 +4,7 @@ import Image from "next/image";
 import backShape from "../../../assets/icons/back-shape.png";
 import { useTranslation } from "@/app/i18n";
 import CatalogCards from "./catalogCards";
+import FadeUp from "@/layout/fadeUp/fadeUp";
 
 interface catalogProps {
   lng: string;

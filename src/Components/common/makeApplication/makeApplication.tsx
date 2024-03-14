@@ -57,7 +57,7 @@ export default function MakeApplication({ lng }: { lng: string }) {
           TransitionComponent={Transition}
           onClose={handleClose}
           aria-describedby="alert-dialog-slide-description"
-          disablePortal={true}
+          className={classes.dialog_wrapper}
         >
           <div className={classes.dialog}>
             <div className={classes.dialog_close}>
@@ -70,10 +70,11 @@ export default function MakeApplication({ lng }: { lng: string }) {
                 className={classes.close_icon}
               />
             </div>
-            <div className={classes.dialog_title}>Оставить заявку</div>
+            <div className={classes.dialog_title}>{t("Оставить заявку")}</div>
             <div className={classes.dialog_text}>
-              Оставьте ваши контактные данные и мы свяжемся с вами в ближайшее
-              время.
+              {t(
+                "Оставьте ваши контактные данные и мы свяжемся с вами в ближайшее время."
+              )}
             </div>
             <form className={classes.body_form}>
               <input
@@ -84,7 +85,7 @@ export default function MakeApplication({ lng }: { lng: string }) {
               <input
                 className={classes.body_form_input}
                 type="text"
-                placeholder={t("Email")}
+                placeholder="Email"
               />
               <PhoneInput
                 country={"uz"}
@@ -92,9 +93,7 @@ export default function MakeApplication({ lng }: { lng: string }) {
                 onChange={handleChange}
                 placeholder="+9989 (94) 999-99-99"
                 containerStyle={{ margin: "20px" }}
-                buttonStyle={{}}
                 dropdownClass="input_phone_dropdown"
-                // dropdownStyle={{ background: "#131313" }}
                 inputProps={{
                   required: true,
                 }}

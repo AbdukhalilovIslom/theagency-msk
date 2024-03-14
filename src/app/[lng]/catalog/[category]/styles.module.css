@@ -1,4 +1,9 @@
 .title {
   position: relative;
   z-index: 2;
+  font-size: var(--font40);
+  font-style: normal;
+  font-weight: 200;
+  line-height: 100%; /* 30px */
+  letter-spacing: -0.114px;
 }

@@ -7,7 +7,6 @@
 .projets_wrapper {
   position: relative;
   z-index: 2;
-  overflow-x: hidden;
 }
 .title {
   position: relative;
@@ -22,7 +21,7 @@
 .title_h2 {
   margin-bottom: 0;
   font-size: var(--font45);
-  font-weight: 200;
+  font-weight: 100;
   font-weight: 200;
   letter-spacing: -0.11px;
   text-align: left;
@@ -35,6 +34,9 @@
 }
 .arrow {
   position: relative;
+  height: 100%;
+  aspect-ratio: 45/81;
+  width: auto;
 }
 
 .title_btn:hover .arrow {
@@ -74,7 +76,7 @@
 }
 .shape {
   position: absolute;
-  bottom: 0px;
+  top: 15%;
   right: 10%;
   height: auto;
   width: 80%;
@@ -83,7 +85,18 @@
   z-index: 1;
 }
 
+.display_block {
+  display: none;
+}
 @media (max-width: 899px) {
+  .display_block {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .display_none {
+    display: none;
+  }
   .projets {
     padding-top: 100px;
     padding-bottom: 40px;
@@ -103,8 +116,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .shape {
-    top: 70px;
-    right: 0px;
+    top: 2%;
+    width: 100%;
+    right: -13%;
   }
 }
 @media (max-width: 520px) {

@@ -23,14 +23,15 @@
   z-index: 2;
 }
 .card {
-  max-width: 351px;
+  max-width: 75%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .card_title {
   font-size: var(--font45);
-  font-weight: 200;
+  font-weight: 100;
+  white-space: pre-line;
 }
 .card_info {
   font-size: var(--font14);
@@ -39,8 +40,8 @@
 }
 .content_image {
   position: absolute;
-  top: -7%;
-  left: 0;
+  bottom: -11%;
+  right: 0%;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -61,6 +62,10 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 40px;
+  }
+  .content_image {
+    top: -4%;
+    right: -19%;
   }
   .card {
     gap: 15px;

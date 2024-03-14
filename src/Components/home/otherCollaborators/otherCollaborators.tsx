@@ -3,13 +3,29 @@ import classes from "./styles.module.css";
 import Container from "@/layout/container/container";
 import Image from "next/image";
 import shape from "../../../assets/icons/back-shape.png";
-import img1 from "../../../assets/images/other_colobarations/Frame 2401.png";
-import img2 from "../../../assets/images/other_colobarations/Frame 2402.png";
+import img1 from "../../../assets/images/other_colobarations/1.webp";
+import img2 from "../../../assets/images/other_colobarations/2.webp";
 import { useTranslation } from "@/app/i18n";
 import EnterButton from "@/Components/common/enterButton/EnterButton";
+import FadeUp from "@/layout/fadeUp/fadeUp";
 
 export default async function OtherCollaborators({ lng }: { lng: string }) {
   const { t } = await useTranslation(lng);
+
+  const data = [
+    {
+      title: t("MSK \n design & construction"),
+      p: t("Дизайн интерьера и архитектура"),
+      href: `/${lng}`,
+      image: img1,
+    },
+    {
+      title: t("MSK \n design furniture"),
+      p: t("Производство мебели и готовая на заказ"),
+      href: `/${lng}`,
+      image: img2,
+    },
+  ];
 
   return (
     <section className={classes.other_collaborators}>
@@ -20,50 +36,34 @@ export default async function OtherCollaborators({ lng }: { lng: string }) {
         <div className={classes.title}>
           {t("Другие направления сотрудничества")}
         </div>
-        <div className={classes.info}>
+        <div className={classes.info_title}>
           {t(
             "MSK - группа компаний и мы можем предложить разные направления сотрудничества."
           )}
         </div>
         <div className={classes.cards}>
-          <div className={classes.card}>
-            <div className={classes.info}>
-              <h2 className={classes.info_h2}>
-                {t("MSK design & construction")}
-              </h2>
-              <p className={classes.info_p}>
-                {t("Дизайн интерьера, архитектура и строительство")}
-              </p>
-            </div>
-            <div className={classes.btn_wrapper}>
-              <EnterButton href={"/" + lng} text={t("ПЕРЕЙТИ НА САЙТ")} />
-            </div>
-            <Image
-              src={img1}
-              alt="card"
-              className={classes.card_image}
-              fill
-              sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-            />
-          </div>
-          <div className={classes.card}>
-            <div className={classes.info}>
-              <h2 className={classes.info_h2}>{t("MSK furniture")}</h2>
-              <p className={classes.info_p}>
-                {t("Производство мебели и готовая на заказ")}
-              </p>
-            </div>
-            <div className={classes.btn_wrapper}>
-              <EnterButton href={"/" + lng} text={t("ПЕРЕЙТИ НА САЙТ")} />
-            </div>
-            <Image
-              src={img2}
-              alt="card"
-              className={classes.card_image}
-              fill
-              sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-            />
-          </div>
+          {data.map(({ title, p, href, image }, index) => {
+            return (
+              <FadeUp delay={(index + 1) / 10} key={index}>
+                <div className={classes.card}>
+                  <div className={classes.info}>
+                    <h2 className={classes.info_h2}>{title}</h2>
+                    <p className={classes.info_p}>{p}</p>
+                  </div>
+                  <div className={classes.btn_wrapper}>
+                    <EnterButton href={href} text={t("ПЕРЕЙТИ НА САЙТ")} />
+                  </div>
+                  <Image
+                    src={image}
+                    alt="card"
+                    className={classes.card_image}
+                    fill
+                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                  />
+                </div>
+              </FadeUp>
+            );
+          })}
         </div>
         <Image
           src={shape}

@@ -12,18 +12,23 @@
 }
 .title_h2 {
   font-size: var(--font45);
-  font-weight: 200;
+  font-weight: 100;
+}
+.body {
+  margin-bottom: 50px;
 }
 .title_btns {
   font-size: 11px;
   display: flex;
   gap: 10px;
   align-items: center;
+  font-size: var(--font14);
 }
 
 .title_btn {
   text-transform: uppercase;
   color: #999999;
+  font-size: var(--font14);
 }
 
 .active_tab {
@@ -32,7 +37,7 @@
 .card {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 301px 1fr auto;
+  grid-template-columns: 30% 1fr auto;
   gap: 34px;
   padding-bottom: 30px;
   border-bottom: 1px solid #616161;
@@ -53,7 +58,7 @@
 }
 .card_info_h2 {
   font-size: var(--font35);
-  max-width: 587px;
+  white-space: pre-line;
   font-weight: 200;
   letter-spacing: -0.11391162127256393px;
   text-align: left;
@@ -84,6 +89,11 @@
   gap: 15px;
 }
 
+@media (max-width: 1439px) {
+  .card {
+    grid-template-columns: 301px 1fr auto;
+  }
+}
 @media (max-width: 767px) {
   .title {
     flex-direction: column;

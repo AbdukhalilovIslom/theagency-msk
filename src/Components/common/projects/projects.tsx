@@ -15,9 +15,14 @@ export default async function Projects({ lng }: { lng: string }) {
       <Container className={classes.projets_wrapper}>
         <div className={classes.title}>
           <h2 className={classes.title_h2}>{t("Наши проекты")}</h2>
-          <EnterButton href={"/projects"} text={t("в портфолио")} />
+          <div className={classes.display_none}>
+            <EnterButton href={"/projects"} text={t("в портфолио")} />
+          </div>
         </div>
         <ProjectCards lng={lng} />
+        <div className={classes.display_block}>
+          <EnterButton href={"/projects"} text={t("в портфолио")} />
+        </div>
       </Container>
       <Image
         src={shape}

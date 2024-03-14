@@ -49,7 +49,6 @@ export default function RootLayout({
           initialPosition={0.08}
           crawlSpeed={200}
           height={2}
-          // crawl={true}
           showSpinner={false}
           shadow="0 0 10px #fff,0 0 5px #fff"
         />

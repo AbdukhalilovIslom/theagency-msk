@@ -1,9 +1,8 @@
 "use client";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import classes from "./styles.module.css";
-import { useTranslation } from "@/app/i18n/client";
 
 export default function LangSwitcher({ lng }: { lng: string }) {
   const pathName = usePathname();

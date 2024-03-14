@@ -17,7 +17,11 @@ export default async function CatalogCard({
   href,
 }: CatalogCardProps) {
   return (
-    <div key={text} className={classes.card}>
+    <div
+      key={text}
+      className={classes.card}
+      //
+    >
       <Image
         src={img}
         alt="card_image"

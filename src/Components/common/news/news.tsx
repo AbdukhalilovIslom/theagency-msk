@@ -8,6 +8,8 @@ import img3 from "../../../assets/images/news/3.png";
 import Image from "next/image";
 import { useTranslation } from "@/app/i18n/client";
 import EnterButton from "../enterButton/EnterButton";
+import Link from "next/link";
+import FadeUp from "@/layout/fadeUp/fadeUp";
 
 const data = {
   news: [
@@ -18,19 +20,20 @@ const data = {
     },
     {
       image: img2,
-      title: "Изготовление строп в ассортименте для UZAUTO MOTORS POWERTRAIN",
+      title:
+        "Изготовление строп в ассортименте \n для UZAUTO MOTORS POWERTRAIN",
       info: "Специалистами ООО «MOS STAL KANAT» по заказу потребителя-  «UZAUTO MOTORS POWERTRAIN» AJ, были произведены и успешно испытаны стропы в ассортименте.",
     },
     {
       image: img3,
-      title: "Испытание нестандартных крупнотоннажных канатных строп",
+      title: "Испытание нестандартных \n крупнотоннажных канатных строп",
       info: "Кольцевой строп был изготовлен специалистами с соблюдением ключевых требований к грузоподъемной продукции и на основании технического задания заказчика.",
     },
   ],
   articles: [
     {
       image: img3,
-      title: "Испытание нестандартных крупнотоннажных канатных строп",
+      title: "Испытание нестандартных \n крупнотоннажных канатных строп",
       info: "Кольцевой строп был изготовлен специалистами с соблюдением ключевых требований к грузоподъемной продукции и на основании технического задания заказчика.",
     },
     {
@@ -40,7 +43,8 @@ const data = {
     },
     {
       image: img2,
-      title: "Изготовление строп в ассортименте для UZAUTO MOTORS POWERTRAIN",
+      title:
+        "Изготовление строп в ассортименте \n для UZAUTO MOTORS POWERTRAIN",
       info: "Специалистами ООО «MOS STAL KANAT» по заказу потребителя-  «UZAUTO MOTORS POWERTRAIN» AJ, были произведены и успешно испытаны стропы в ассортименте.",
     },
   ],
@@ -76,44 +80,58 @@ export default function News({ lng }: { lng: string }) {
       </div>
       <div className={classes.body}>
         {tab === 1
-          ? data["news"].map(({ image, title, info }) => {
+          ? data["news"].map(({ image, title, info }, index) => {
               return (
-                <div key={title} className={classes.card}>
-                  <Image
-                    src={image}
-                    alt="news_image"
-                    width={301}
-                    height={145}
-                    className={classes.news_image}
-                  />
-                  <div className={classes.card_info}>
-                    <h2 className={classes.card_info_h2}>{title}</h2>
-                    <p className={classes.card_info_p}>{info}</p>
+                <FadeUp delay={(index + 1) / 10} key={title}>
+                  <div className={classes.card}>
+                    <Link href={"/news/somthing"}>
+                      <Image
+                        src={image}
+                        alt="news_image"
+                        width={301}
+                        height={145}
+                        className={classes.news_image}
+                      />
+                    </Link>
+                    <div className={classes.card_info}>
+                      <h2 className={classes.card_info_h2}>{title}</h2>
+                      <p className={classes.card_info_p}>{info}</p>
+                    </div>
+                    <div className={classes.card_info_btn}>
+                      <EnterButton
+                        href={"/news/somthing"}
+                        text={t("СМОТРЕТЬ")}
+                      />
+                    </div>
                   </div>
-                  <div className={classes.card_info_btn}>
-                    <EnterButton href={"/news/somthing"} text={t("СМОТРЕТЬ")} />
-                  </div>
-                </div>
+                </FadeUp>
               );
             })
-          : data["articles"].map(({ image, title, info }) => {
+          : data["articles"].map(({ image, title, info }, index) => {
               return (
-                <div key={title} className={classes.card}>
-                  <Image
-                    src={image}
-                    alt="news_image"
-                    width={301}
-                    height={145}
-                    className={classes.news_image}
-                  />
-                  <div className={classes.card_info}>
-                    <h2 className={classes.card_info_h2}>{title}</h2>
-                    <p className={classes.card_info_p}>{info}</p>
+                <FadeUp delay={(index + 1) / 10} key={title}>
+                  <div className={classes.card}>
+                    <Link href={"/news/somthing"}>
+                      <Image
+                        src={image}
+                        alt="news_image"
+                        width={301}
+                        height={145}
+                        className={classes.news_image}
+                      />
+                    </Link>
+                    <div className={classes.card_info}>
+                      <h2 className={classes.card_info_h2}>{title}</h2>
+                      <p className={classes.card_info_p}>{info}</p>
+                    </div>
+                    <div className={classes.card_info_btn}>
+                      <EnterButton
+                        href={"/news/somthing"}
+                        text={t("СМОТРЕТЬ")}
+                      />
+                    </div>
                   </div>
-                  <div className={classes.card_info_btn}>
-                    <EnterButton href={"/news/somthing"} text={t("СМОТРЕТЬ")} />
-                  </div>
-                </div>
+                </FadeUp>
               );
             })}
       </div>

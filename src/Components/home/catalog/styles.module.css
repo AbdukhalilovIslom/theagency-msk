@@ -1,7 +1,6 @@
 .catalog {
   padding-block: 168px;
   position: relative;
-  overflow: hidden;
 }
 .wrapper {
   padding-inline: var(--padding-inline);
@@ -14,30 +13,32 @@
 .backshape_1 {
   position: absolute;
   top: 25px;
-  left: 10%;
+  left: 5%;
   aspect-ratio: 869/508;
-  width: auto;
+  width: 70%;
   height: auto;
 }
 
 .backshape_2 {
   position: absolute;
-  bottom: -100px;
-  right: 0px;
+  bottom: -13%;
+  right: -10%;
   aspect-ratio: 869/508;
   height: auto;
-  width: auto;
+  width: 80%;
 }
 
 .title {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   position: relative;
+
   z-index: 2;
 }
 .h2 {
   font-size: var(--font45);
-  font-weight: 200;
+  font-weight: 100;
   position: relative;
   z-index: 2;
 }
@@ -78,6 +79,7 @@
   .title {
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    align-items: flex-start;
     gap: 10px;
   }
   .backshape_1,
@@ -95,7 +97,10 @@
   }
   .backshape_2 {
     left: 10px;
-    bottom: 0;
+    bottom: 2%;
+  }
+  .p {
+    max-width: 300px;
   }
 }
 
